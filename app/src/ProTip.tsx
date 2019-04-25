@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import {makeStyles, Theme} from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import Typography from '@material-ui/core/Typography';
@@ -12,7 +12,7 @@ function LightBulbIcon(props: any) {
   );
 }
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles( (theme: Theme) => ({
   root: {
     margin: theme.spacing(6, 0, 3),
   },
