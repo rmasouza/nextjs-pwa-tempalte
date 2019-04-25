@@ -5,8 +5,10 @@ import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../themes/theme';
 import RootStore from "../stores/RootStore";
-import {Provider} from "mobx-react";
+import {observer, Provider} from "mobx-react";
+import {observable} from "mobx";
 
+@observer
 class MyApp extends App {
     rootStore: RootStore;
 
@@ -26,19 +28,28 @@ class MyApp extends App {
         }
 
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
+            console.log(navigator.onLine)
+
+            window.addEventListener('load',  () => {
                 navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).then(function (registration) {
                     console.log('SW registered: ', registration)
                 }).catch(function (registrationError) {
                     console.log('SW registration failed: ', registrationError)
                 })
-            })
+            });
+
+            window.addEventListener('online', () => {
+
+            });
+
+            window.addEventListener('offline', () => {
+                alert('Não há conexão com a internet!')
+            });
         }
     }
 
     render() {
         const { Component, pageProps } = this.props;
-
         return (
             <Container>
                 <Head>
