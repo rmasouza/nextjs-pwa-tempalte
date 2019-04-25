@@ -10,7 +10,6 @@ import {Provider} from "mobx-react";
 class MyApp extends App {
     rootStore: RootStore;
 
-
     constructor(props: any, context: any) {
         super(props, context);
 
@@ -26,15 +25,15 @@ class MyApp extends App {
             jssStyles.parentNode.removeChild(jssStyles);
         }
 
-        // if ('serviceWorker' in navigator) {
-        //     window.addEventListener('load', function () {
-        //         navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).then(function (registration) {
-        //             console.log('SWwww registered: ', registration)
-        //         }).catch(function (registrationError) {
-        //             console.log('SW registration failed: ', registrationError)
-        //         })
-        //     })
-        // }
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).then(function (registration) {
+                    console.log('SW registered: ', registration)
+                }).catch(function (registrationError) {
+                    console.log('SW registration failed: ', registrationError)
+                })
+            })
+        }
     }
 
     render() {

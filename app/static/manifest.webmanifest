@@ -1,0 +1,15 @@
+{
+  "name": "Project Nama",
+  "short_name": "Project Name",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f0f0",
+  "theme_color": "#007bff",
+  "description": "Project NAme PWA.",
+  "icons": [{
+    "src": "/static/icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "gcm_sender_id": "103953800507"
+}

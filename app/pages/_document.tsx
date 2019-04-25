@@ -17,6 +17,12 @@ class MyDocument extends Document {
           />
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
+          <link rel="manifest" href={"/static/manifest.webmanifest"} />
+          <link rel="shortcut icon" href={"/static/icon2.jpg"} />
+          <link rel="apple-touch-icon" href={"/static/icon2.jpg"} />
+          <meta name="apple-mobile-web-app-status-bar-style" content={"default"} />
+          <meta name="apple-mobile-web-app-capable" content={"yes"} />
+          <meta name="mobile-web-app-capable" content={"yes"} />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
