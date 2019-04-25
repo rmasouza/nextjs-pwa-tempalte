@@ -1,8 +1,8 @@
 import * as React from "react";
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
-import ProTip from '../src/ProTip';
-import Link from '../src/Link';
+import ProTip from '../components/ProTip';
+import Link from '../components/Link';
 import {Typography} from "@material-ui/core";
 import MuiLink from '@material-ui/core/Link';
 

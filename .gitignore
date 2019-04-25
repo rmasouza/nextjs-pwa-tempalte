@@ -11,7 +11,7 @@ build/
 
 *.log
 
-src/out/
+app/components/out/
 out/
 \.DS_Store
 
