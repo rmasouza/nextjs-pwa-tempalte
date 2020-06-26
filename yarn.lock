@@ -3856,10 +3856,10 @@ next-offline@^3.3.8:
     webpack "^4.19.1"
     workbox-webpack-plugin "3.6.3"
 
-next-plugin-custom-babel-config@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/next-plugin-custom-babel-config/-/next-plugin-custom-babel-config-1.0.0.tgz#053547672c26431a9884342238ebb9acab54c77c"
-  integrity sha512-jJZOfR1oJPBZG+1iX3Ae7Rzc3tGvABIwlXNg/dzvsLh/4ENdAqojHDpdA5297ENZyCBJ6kHgjBXnxt3tpZZGvg==
+next-plugin-custom-babel-config@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/next-plugin-custom-babel-config/-/next-plugin-custom-babel-config-1.0.4.tgz#b99d8b7cfafb141176b51d717491957ee19bc338"
+  integrity sha512-553Xu6qtPIv10TaP/KRtnOP97Xi4yGF1aAZTACQgLz/qJTOCVG4F25fm84uf1xZRdHlhOUEt9t86frolh4N0EA==
 
 next-server@8.1.0:
   version "8.1.0"
