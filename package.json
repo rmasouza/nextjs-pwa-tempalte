@@ -23,7 +23,7 @@
     "@types/body-parser": "^1.17.0",
     "@types/express": "^4.16.1",
     "@types/next": "latest",
-    "@types/node": "^11.9.3",
+    "@types/node": "^14.0.19",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/styled-jsx": "latest",
